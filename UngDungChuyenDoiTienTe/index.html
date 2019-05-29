@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form >
+		<fieldset>
+    <legend>Chuyen Doi Tien Te:</legend>
+		Amount <br>
+		<input type="text" id="Amount">
+		<select name="form Currency">
+		<option value="VN">VietNam</option>	
+	</select>
+	<select name="To Currency">
+		<option value="=US">USD	</option>
+	</select>
+	<input type="button" onclick="convert()" value="Convert">
+	<p id="KQ"></p>
+    </fieldset>
+	</form>
+</body>
+ <script language="javascript"> 
+           function convert(){
+           	let money= document.getElementById('Amount').value;
+           	parseFloat(money);
+           	let chuyendoi=money/23000;
+           	document.getElementById("KQ").innerHTML=chuyendoi+"USD";
+           }
+     </script>
+</html>
