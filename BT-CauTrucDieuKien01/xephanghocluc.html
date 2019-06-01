@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diemKiemTra = parseFloat(prompt("Nhập Điểm Kiểm"));
+        let diemThiGiuaKi = parseFloat(prompt("Nhập Điểm Thi"));
+        let diemThiCuoiKi = parseFloat(prompt("Nhập Điểm Thi Cuối"));
+        let diemTb = (diemKiemTra + diemThiCuoiKi + diemThiGiuaKi) / 3;
+        if (diemTb >= 8.5) alert("Học Lực giỏi")
+        else if (diemTb >= 6.5) alert("Học Lực Khá")
+        else if (diemTb >= 5) alert("Học Lực Tb")
+        else alert("học lực yếu");
+    </script>
+
+</body>
+
+</html>

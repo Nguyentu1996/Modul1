@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nhập thời lượng của bạn (tính bằng phút)</p>
+    <input type="text" id="nhap"><br>
+    <input type="button" onclick="tinhCuoc()" value="Nội Mạng">
+    <input type="button" onclick="tinhPhi()" value="Ngoại Mạng">
+</body>
+<script>
+    function tinhCuoc() {
+        let time = document.getElementById("nhap").value;
+        if (time >= 6) {
+            let cuocPhi = time * 790
+            alert("Gía Cước Của bạn là : " + cuocPhi + "  đồng")
+        } else {
+            let cuocPhi = time * 1090
+            alert("giá cước của bạn là " + cuocPhi)
+        };
+    }
+
+    function tinhPhi() {
+        let phi = document.getElementById("nhap").value;
+        if (phi >= 6) {
+            let gia = phi * 1090
+            alert("giá Cước Ngoại Mạng Của bạn : " + gia)
+        } else {
+            let gia = phi * 1500
+            alert("giá Cước Ngoại Mạng Của bạn : " + gia)
+        };
+    }
+</script>
+
+</html>
