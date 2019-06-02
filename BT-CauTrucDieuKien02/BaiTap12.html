@@ -13,6 +13,8 @@
         let soTienVay = parseFloat(prompt("nhập số tiền cần vay đơn vị triệu đồng "));
         let kiHan = parseInt(prompt("kì hạn của bạn: "));
         let laixuat = parseFloat(prompt("cho tôi biết lãi xuất của bạn: "));
+        // công thức s=a(1+r)^n
+        //trong đó a=soTienVay--r=laixuat--n=kiHan
         let bienphu = 1 + (laixuat / 100);
         let bienphu2 = Math.pow(bienphu, kiHan);
         let tienPhaiTra = soTienVay * bienphu2;
