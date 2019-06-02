@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("nhập  a "));
+        let b = parseInt(prompt("nhập  b"));
+        let c = parseInt(prompt("nhập c "));
+        let delta = (b * b - 4 * a * c);
+        if (delta == 0) {
+            let x = -b / (2 * a);
+            alert("phương trình có nghiệm kép " + x);
+        } else if (delta < 0) {
+            alert("Phương Trình Vô Nghiệm");
+        } else {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            alert("Phương Trình Có Hai Nghiệm Phân Biệt " + x1 + " và " + x2);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soDienTieuThu = parseFloat(prompt("nhập số lượng điện tiêu thụ trong tháng đơn vị kwh: "));
+        let thanhTien;
+        if (soDienTieuThu > 401) {
+            thanhTien = soDienTieuThu * 2927
+            alert(+thanhTien + " đồng")
+        } else if (soDienTieuThu > 301) {
+            thanhTien = soDienTieuThu * 2834
+            alert(+thanhTien + " đồng")
+        } else if (soDienTieuThu > 201) {
+            thanhTien = soDienTieuThu * 2536
+            alert(+thanhTien + " đồng")
+        } else if (soDienTieuThu > 101) {
+            thanhTien = soDienTieuThu * 2014
+            alert(+thanhTien + " đồng")
+        } else if (soDienTieuThu > 51) {
+            thanhTien = soDienTieuThu * 1734
+            alert(+thanhTien + " đồng")
+        } else {
+            thanhTien = soDienTieuThu * 1678
+            alert(+thanhTien + " đồng")
+        };
+    </script>
+</body>
+
+</html>
