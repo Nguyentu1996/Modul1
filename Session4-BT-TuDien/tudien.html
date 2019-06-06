@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Từ Điển</legend>
+            <input type="text" id="txtInput">
+            <input type="button" onclick="search()" value="tra cứu">
+            <p id="display"></p>
+        </fieldset>
+    </form>
+    <script>
+        function search() {
+            let dsTu = document.getElementById('txtInput').value;
+            let arr = ["hello", "good morning", "good night"];
+            let arr_viet = ["xin chào", "chào buổi sáng", "chúc ngủ ngon"];
+            let ketqua = false;
+            for (let i = 0; i < arr.length; i++) {
+                if (dsTu == arr[i]) {
+                    ketqua = true;
+                    document.getElementById("display").innerHTML = arr_viet[i];
+                }
+            }
+            if (ketqua) document.getElementById("display").innerHTML = arr_viet[i];
+            else document.getElementById("display").innerHTML = dsTu + " không có trong từ điển";
+        }
+    </script>
+</body>
+
+</html>
