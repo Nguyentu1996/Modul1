@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtInput">
+    <input type="button" onclick="themPhanTu()" value="Thêm">
+    <input type="button" onclick="daoPhanTu()" value="đảo vị trí ">
+    <p id="ketqua"></p>
+    <p id="ketqua_2"></p>
+    <script>
+        let x = [];
+        let i = 0;
+
+        function themPhanTu() {
+            x[i] = document.getElementById("txtInput").value;
+            i++;
+            let txt = "";
+            for (let i = 0; i < x.length; i++) {
+                txt += (x[i] + " ");
+            }
+            document.getElementById("ketqua").innerHTML = txt;
+        }
+        let txt_1 = "<hr>";
+
+        function daoPhanTu() {
+            for (let i = x.length - 1; i >= 0; i--) {
+                txt_1 += (x[i] + " ");
+            }
+            document.getElementById("ketqua_2").innerHTML = txt_1;
+        }
+    </script>
+</body>
+
+</html>
