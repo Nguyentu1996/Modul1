@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="txtInput">
+    <input type="button" onclick="print_snt()" value="kiểm tra">
+    <p id="result"></p>
+    <script>
+        function kiem_tra_snt(n) {
+            var flag = true;
+            if (n < 2) {
+                flag = false;
+            } else if (n == 2) {
+                flag = true;
+            } else if (n % 2 == 0) {
+                flag = false;
+            } else {
+                for (var i = 3; i <= Math.sqrt(n); i += 2) {
+                    if (n % i == 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+
+            return flag;
+        }
+
+
+        function print_snt() {
+
+            var number = document.getElementById("txtInput").value;
+            number = parseInt(number);
+            var html = '';
+            for (var i = 1; i <= number; i++) {
+
+                if (kiem_tra_snt(i)) {
+                    html += i + ' <br/>';
+                }
+            }
+            document.getElementById("result").innerHTML = html;
+
+
+        }
+    </script>
+</body>
+
+</html>
