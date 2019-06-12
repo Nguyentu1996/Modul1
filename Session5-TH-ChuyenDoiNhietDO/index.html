@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Chuyển Đổi độ C sang độ F</h2>
+    <input type="text" id="txtInput">
+    <input type="button" onclick="btnChuyenDoi()" value="đổi">
+    <p id="kqua"></p>
+    <script>
+        function btnChuyenDoi() {
+            let doC = document.getElementById("txtInput").value;
+            parseFloat(doC);
+            let doF = 1.8 * doC + 32;
+            document.getElementById("kqua").innerHTML = doF;
+        }
+    </script>
+
+</body>
+
+</html>
