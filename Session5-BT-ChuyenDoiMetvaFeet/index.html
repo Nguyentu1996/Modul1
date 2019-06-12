@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> đổi đơn vị độ dài</h2>
+    <input type="text" id="txtInput">
+    <input type="button" onclick="feetToMeter()" value="đổi sang mét">
+    <input type="button" onclick="meterToFeet()" value="đổi sang feet">
+    <p id="kqua"></p>
+    <script>
+        function feetToMeter() {
+            let feet = document.getElementById("txtInput").value;
+            parseFloat(feet);
+            let meter = 0.305 * feet;
+            document.getElementById("kqua").innerHTML = meter + " met";
+
+        }
+
+        function meterToFeet() {
+            let meter = document.getElementById("txtInput").value;
+            parseFloat(meter);
+            let feet = 3.279 * meter;
+            document.getElementById("kqua").innerHTML = feet + " feet";
+
+        }
+    </script>
+</body>
+
+</html>
