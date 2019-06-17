@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <h3>Thêm mới sản phẩm</h3>
+    <div class="container">
+        <form>
+            <input type="text" id="add-name" placeholder="sản phẩm mới">
+            <input type="submit" value="add">
+        </form>
+    </div>
+    <h3>Hiển thị tất cả sản phẩm</h3>
+    <table>
+        <tr>
+            <th style="text-align:left;">Tên Sản Phẩm</th>
+            <th style="text-align: right; color:royalblue" colspan="2">
+                <p id="counter"></p>
+            </th>
+        </tr>
+        <tbody id="products"></tbody>
+    </table>
+    <script src="sccipt.js"></script>
+    <div id="spoiler" role="aria-hidden">
+        <h3>Edit Product</h3>
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+            <input type="text" id="edit-name">
+            <input type="submit" value="Edit" /><a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+</body>
+
+</html>
