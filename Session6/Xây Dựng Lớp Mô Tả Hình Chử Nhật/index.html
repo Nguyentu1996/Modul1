@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="kqua"></p>
+    <p id="kqua2"></p>
+    <canvas id="myCanvas" width="300px" height="150px" style="border:1px solid #d3d3d3"></canvas>
+    <script>
+        function Rectangle(a, b) {
+            this.a = a;
+            this.b = b;
+        }
+
+        function hideRectangle() {
+            let rtg = document.getElementById("myCanvas").getContext("2d");
+            let rect = new Rectangle(150, 75);
+            let chuVi = (rect.a + rect.b) * 2;
+            let dientich = (rect.a * rect.b);
+            document.getElementById("kqua2").innerHTML = "diện tích hình chữ nhật " + dientich + "<br>";
+            document.getElementById("kqua").innerHTML = "chu vi hình chữ nhật " + chuVi;
+            rtg.fillStyle = "CCCCCC";
+            rtg.beginPath();
+            rtg.fillRect(0, 0, rect.a, rect.b);
+            rtg.fill();
+        }
+        hideRectangle();
+    </script>
+</body>
+
+</html> 
