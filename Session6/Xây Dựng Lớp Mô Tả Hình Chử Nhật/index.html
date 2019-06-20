@@ -16,22 +16,21 @@
         function Rectangle(a, b) {
             this.a = a;
             this.b = b;
-        }
+            this.color = "red";
 
-        function hideRectangle() {
-            let rtg = document.getElementById("myCanvas").getContext("2d");
-            let rect = new Rectangle(150, 75);
-            let chuVi = (rect.a + rect.b) * 2;
-            let dientich = (rect.a * rect.b);
-            document.getElementById("kqua2").innerHTML = "diện tích hình chữ nhật " + dientich + "<br>";
-            document.getElementById("kqua").innerHTML = "chu vi hình chữ nhật " + chuVi;
-            rtg.fillStyle = "CCCCCC";
-            rtg.beginPath();
-            rtg.fillRect(0, 0, rect.a, rect.b);
-            rtg.fill();
+            this.draw = function() {
+                let rtg = document.getElementById("myCanvas").getContext("2d");
+                rtg.fillStyle = this.color;
+                rtg.beginPath();
+                rtg.fillRect(0, 0, this.a, this.b);
+                rtg.fill();
+            }
         }
-        hideRectangle();
+        rect = new Rectangle(150, 75);
+        rect.draw();
+        reac1 = new Rectangle(250, 100);
+        reac1.draw();
     </script>
 </body>
 
-</html> 
+</html>

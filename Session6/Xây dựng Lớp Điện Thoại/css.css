@@ -1,0 +1,73 @@
+#phone1 {
+    background-color: rgb(177, 193, 223);
+    float: left;
+    height: 300px;
+    width: 200px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+#phone1 input {
+    width: 196px;
+    height: 90px;
+}
+
+#phone1 button {
+    background-color: aqua;
+    border: 1px solid brown;
+    color: blue;
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1.5px;
+}
+
+#phone1 p {
+    color: #000;
+    float: right;
+}
+
+#phone1 div {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 30%;
+}
+
+#phone2 {
+    background-color: burlywood;
+    float: right;
+    height: 300px;
+    width: 200px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+#phone2 input {
+    width: 196px;
+    height: 90px;
+}
+
+#phone2 button {
+    background-color: aqua;
+    border: 1px solid brown;
+    color: blue;
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1.5px;
+}
+
+#phone2 p {
+    color: #000;
+    float: left;
+}
+
+#phone2 div {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 30%;
+}
