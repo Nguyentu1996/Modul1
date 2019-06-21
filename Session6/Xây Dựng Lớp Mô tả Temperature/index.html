@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Temperature {
+            constructor(temperature) {
+                this.temperature = temperature;
+            }
+            chuyenDoF() {
+                var doF = (9 / 5 * this.temperature) + 32;
+                document.write(this.temperature + "độ c= " + doF + " độ F" + "<br>");
+
+            }
+            chuyenDoK() {
+                var doK = this.temperature + 273.15;
+                document.write(this.temperature + "độ c= " + doK + " Độ K");
+            }
+        }
+        var tem = new Temperature(25);
+        tem.chuyenDoF();
+        tem.chuyenDoK();
+    </script>
+</body>
+
+</html>
