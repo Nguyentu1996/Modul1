@@ -45,7 +45,7 @@ var player = {
 
     newPos: function() {
         if (this.y < 320) {
-            this.speedY = 2
+            this.speedY = 2;
         }
         this.y += this.speedY;
         if (this.speedY == 2 && this.y == 450) {

@@ -10,13 +10,16 @@
 
 <body>
     <script>
-        let value = prompt("Enter a number: ");
+        let max = x[0];
+        let index = 0;
         let x = [-3, 5, 1, 2, 10];
-        for (let i = 0; i < x.length; i++) {
-            if (value == x[i]) {
-                alert("value " + x[i] + " found at " + i);
+        for (let i = i; i < x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+                index = i;
             }
         }
+        alert("max: " + max + " at position" + index);
     </script>
 </body>
 
