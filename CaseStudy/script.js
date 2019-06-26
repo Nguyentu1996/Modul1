@@ -26,7 +26,7 @@ function ranGap() {
     return Math.floor(minGap + Math.random() * (maxGap - minGap));
 }
 var scoreText = {
-    x: 1100,
+    x: 100,
     y: 50,
     update: function(text) {
         gamearea.context.fillStyle = "gray";
